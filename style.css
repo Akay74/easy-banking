@@ -21,12 +21,14 @@ header{
 .navbar{
     background-color: white;
     padding: 1.5em;
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar > ul{
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 .desktop-nav{
@@ -40,18 +42,29 @@ header{
     transform: translate(-50%, 38%);
 }
 
+.mobile-nav{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 80%;
+    margin: 30% 10%;
+}
+
 .mobile-links {
     margin-bottom: 1.5rem;
     text-align: center;
+    list-style-type: none;
 }
 
 .mobile-links:last-child {
     margin-bottom: 0;
 }
 
-/*.mobile-links a {
-    color: ;
-}*/
+.mobile-links a {
+    color: #2D314E;
+    text-decoration: none;
+}
 
 .close-icon {
     position: absolute;
@@ -186,7 +199,7 @@ article img{
 
 footer{
     background-color: #2D314E;
-    padding: 2.5rem 7rem 3.5rem;
+    padding: 2.5rem 5rem 3.5rem;
     text-align: center;
 }
 
@@ -219,6 +232,7 @@ footer{
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     text-align: center;
     text-decoration: none;
+    width: 70%;
 }
 
 .footer-invite:hover {
@@ -230,7 +244,7 @@ footer{
 }
 
 .footer-links li{
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
     list-style-type: none;
     cursor: pointer;
     font-size: 18px;
