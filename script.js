@@ -9,7 +9,6 @@ let hamburgerButton = document.querySelector(".hamburger-icon");
 
 let navigationLinks = document.querySelector(".mobile-nav");
 
-
 function showNavigationLinks() {
         console.log("Hamburger button clicked");
         hamburgerButton.classList.toggle("hidden");
