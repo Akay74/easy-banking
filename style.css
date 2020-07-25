@@ -37,6 +37,12 @@ header{
     color: #000;
   }
   
+  .nav-links:hover {
+    cursor: pointer;
+    color: #2D314E;
+    border-bottom: 3px solid #2D314E;
+  }
+
   .main-nav li {
     text-align: center;
     margin: 15px auto;
@@ -207,6 +213,10 @@ footer{
     cursor: pointer;
 }
 
+.contact-icons img:hover{
+    fill: hsl(136, 65%, 51%);
+}
+
 
 .footer-invite-wrapper {
     margin:3rem auto;
@@ -274,12 +284,6 @@ footer{
 
       .navbar-toggle {
         display: none;
-      }
-    
-      .nav-links:hover {
-        cursor: pointer;
-        color: #2D314E;
-        border-bottom: 3px solid #2D314E;
       }
 
       .header-invite {
